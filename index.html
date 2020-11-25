@@ -65,31 +65,24 @@
                             <h3 class="mb-0">Chess Outcome Prediction</h3>
                             <br>
                             <img class="img-resposive" src="assets/img/robotchess.jpg" width="468" align="right">
-                            <p>This project examines a data set of 20,000 chess games and tries to predict the outcome using a neural network and only the moves played. The moves are in a PGN format, so work needs to be done in order to prepare them for modeling. Data cleaning and preprocessing sections of the project handle that by putting the moves into split lists, putting those lists into an array, then tokenizing all unique moves. In addition, exploratory data analysis is conducted in order to gain a better understanding of the data and look into potential concepts to include into the model. Examples of EDA include looking at the distribution of game outcomes, a histogram of average ratings, and examining the most popular chess openings used by all and highly skilled players.</p>
+                            <p>I examine a data set of 20,000 chess games and try to predict the outcome using a neural network and only the moves played. The moves are in a PGN format, so work needs to be done in order to prepare them for modeling. Data cleaning and preprocessing sections of the project handle that by putting the moves into split lists, putting those lists into an array, then tokenizing all unique moves. In addition, exploratory data analysis is conducted in order to gain a better understanding of the data and look into potential concepts to include into the model. Examples of EDA include looking at the distribution of game outcomes, a histogram of average ratings, and examining the most popular chess openings used by all and highly skilled players. I used LSTM and GRU neural networks to predict the outcome with an 88% accuracy for my best model.</p>
                         </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <h3 class="mb-0">Predicting Future COVID-19 Hotspots</h3>
+                            <br>
+                            <img class="img-resposive" src="assets/img/Choropleth.png" width="468" align="right">
+                            <p>I worked alongside two Data Science Fellows to create a model and map of future COVID-19 hotspots. Our study utilized COVID-19 daily data on confimed cases, population, weather, and COVID-related search activity to create our model. The breadth of the data (over 6 months of daily data for 50 US states) introduced a not-inconsequential amount of complexity. After testing SARIMA and ARIMA models, we tried two additional models: a Facebook Prophet and an IID Model. Ultimately, we determined that the IID Model yielded the most specific predictions, as it allowed us to fit models specific to each state. Our docuementation includes heatmaps which visualize for the reader the difference in predictions.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                            <h3 class="mb-0">Natural Language Processing Reddit Classification</h3>
+                            <br>
+                            <img class="img-resposive" src="assets/img/redditlogo.png" width="468" align="right">
+                            <p>The mission of this project is to scrape 5,000 posts overall from the anime and manga subreddits and use two models to predict from which subreddit the posts came based on the title. First, a function is created to retrieve all the data. Then, the data set is manually cleaned to ensure as high accuracy as possible and care when handling the unique range in post characters within these subreddits. The two subreddits are combined into one data set, which is further cleaned by removing null values, replacing [removed] and [deleted] tags with empty stirngs, and a label column is created in preparation for modeling that distinguishes which subreddit a row is from. Exploratory data analysis and preprocessing are handled via a WordCloud visual to show the word range, indicating prevalent words that can be attributed to one of the two subreddits. In addition, a plot of the top 10 words and their frequencies is displayed. RegExpTokenizer is utilized to manually tokenize title and post columns. Then, tokens are lemmatized to reduce verbs and improve accuracy even further. Stemming was attempted at some point but it was too strong of a tokenizing mechanism for this project. Preprocessing and lemmatizing functions were modified and mapped to the columns, looping back to join the tokenized data into a string form. Two models were tested: a basic LogisticRegression and a basic MultinomialNB, both with a CountVectorizer to further clean and process the data. To my surprise, the LogisticRegression proved to be more accurate, which I justify later within the project. I follow up by making conclusions and recommendations based on my findings.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
                     </div>
                 </div>
             </section>
