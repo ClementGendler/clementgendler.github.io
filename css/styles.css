@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #267ed1;
   text-decoration: none;
   background-color: transparent;
 }
@@ -476,7 +476,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
